@@ -1,0 +1,27 @@
+/* Start:vue3-colorpicker */
+.vc-colorpicker,
+.vc-colorpicker--tabs__bg{
+    background-color: $form-control-bg !important;
+    color: $default-text-color !important;
+}
+.vc-gradient-picker .vc-gradient__types .vc-gradient__type,
+.vc-gradient-picker__body .vc-degree-input__control,
+.vc-gradient-picker__body .vc-degree-input__panel,
+.vc-gradient-picker__body .vc-degree-input__control input,
+.vc-display .vc-alpha-input>input,
+.vc-display .vc-color-input input{
+    color: $default-text-color !important;
+}
+.vc-colorpicker--tabs,
+.vc-colorpicker--tabs__inner{
+    background: $default-background !important;
+    padding: 0.25rem;
+}
+.vc-color-wrap.transparent{
+    background-image: none !important;
+    border: 1px solid var(--default-border) !important;
+}
+.theme-colors .switch-select .vc-color-wrap.transparent{
+    width: 2rem;height: 2rem;
+}
+/* End:vue3-colorpicker */

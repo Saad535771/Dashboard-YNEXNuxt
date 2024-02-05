@@ -1,0 +1,111 @@
+/* Start: form wizard vue3 */
+.form-wizard-vue .fw-body-list>li>.fw-list-wrapper {
+    top: -3px !important;
+}
+
+.form-wizard-vue .fw-list-wrapper-icon.fw-step-active,
+.form-wizard-vue .fw-body-list li .fw-list-wrapper-icon.fw-step-checked {
+    background: $primary !important;
+    color: #fff !important;
+    border: 0px !important;
+
+    .fw-step-title {
+        color: $primary !important;
+    }
+}
+
+.form-wizard-vue .fw-body-list li .fw-list-progress {
+    width: 100%;
+    inset-inline-start: 50%;
+}
+
+.fw-step-title {
+    color: $default-text-color !important;
+    margin-block-start: 8px;
+    font-size: 14px;
+}
+
+.fw-footer-left {
+    margin-inline: 0.25rem;
+}
+
+@media (max-width:768px) {
+    .form-wizard-vue .fw-body-content {
+        padding: 0.25rem !important;
+    }
+
+    .fw-body-list {
+        padding-left: 0 !important;
+    }
+
+    .form-wizard-vue .fw-footer {
+        padding: 10px 0px !important;
+    }
+}
+
+.fw-step-container {
+    font-size: 15px;
+    font-weight: 600;
+    // font-family: initial;
+}
+
+.form-wizard-vue .fw-body-list li .fw-list-wrapper-icon {
+    background: $light !important;
+    color: $default-text-color !important;
+}
+
+.form-wizard-vue .fw-body-list .fw-list-progress {
+    height: 0.1px !important;
+    background: $input-border !important;
+}
+
+.form-wizard-vue .fw-body-list li .fw-list-wrapper-icon.fw-step-active {
+    background: $primary !important;
+    color: $white !important;
+}
+
+.fw-step-title.active {
+    color: $primary;
+}
+
+[dir="rtl"] {
+    .form-wizard-vue .fw-body-list .fw-list-progress {
+        left: initial !important;
+        inset-inline-start: 80%;
+    }
+
+    .fw-body .pi-arrow-right,
+    .fw-body .pi-arrow-left {
+        transform: rotate(180deg);
+    }
+}
+
+[dir=rtl] .form-wizard-vue .fw-body-list .fw-list-progress {
+    left: initial !important;
+    inset-inline-start: 50%;
+}
+
+@media (max-width: 480px) {
+    .form-wizard-vue .fw-body-list li .fw-list-wrapper-icon {
+        width: 35.89px !important;
+        height: 35px !important;
+    }
+
+    .fw-step-title {
+        font-size: 12px !important;
+    }
+
+    .form-wizard-vue .fw-body-list .fw-list-progress {
+        inset-block-start: 30% !important;
+    }
+
+    .form-wizard-vue .fw-body-list li {
+        padding: 0.5rem !important;
+    }
+
+    .fw-body-list {
+        padding-right: 0px !important;
+    }
+
+    /* End: form wizard vue3 */
+}

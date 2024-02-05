@@ -1,0 +1,82 @@
+/* Start:vue3-easy-data-table */
+:root {
+    --easy-table-loading-mask-background-color: #{$form-control-bg} !important;
+    --easy-table-footer-background-color: #{$form-control-bg} !important;
+    --easy-table-body-even-row-background-color: #{$form-control-bg} !important;
+    --easy-table-body-row-hover-background-color: #{$default-background} !important;
+    --easy-table-body-row-background-color: #{$form-control-bg} !important;
+    --easy-table-header-background-color: #{$form-control-bg} !important;
+    --easy-table-message-font-color: #{$default-text-color} !important;
+    --easy-table-header-font-color: #{$default-text-color} !important;
+    --easy-table-body-row-font-color: #{$default-text-color} !important;
+    --easy-table-body-row-hover-font-color: #{$default-text-color} !important;
+    --easy-table-body-even-row-font-color: #{$default-text-color} !important;
+    --easy-table-footer-font-color: #{$default-text-color} !important;
+    --easy-table-buttons-pagination-border: 0.1px solid #{$input-border} !important;
+    --easy-table-row-border: 0.1px solid #{$input-border} !important;
+    --easy-table-border: 0.1px solid #{$input-border} !important;
+    --easy-table-rows-per-page-selector-z-index: 5 !important;
+    --easy-table-footer-height: auto !important;
+    --easy-table-scrollbar-thumb-color : #{$form-control-bg} !important;
+    --easy-table-scrollbar-color : #{$form-control-bg} !important;
+    --easy-table-scrollbar-corner-color : #{$form-control-bg} !important;
+    --easy-table-scrollbar-track-color: var(--scrollthumb) !important;
+}
+
+[dir="rtl"] {
+    .direction-left {
+        text-align: right !important;
+    }
+}
+
+.easy-data-table__rows-selector {
+
+    border: 1px solid var(--input-border);
+    border-radius: 0.25rem;
+
+    .rows-input__wrapper {
+        border: none !important;
+
+        .triangle {
+            margin-inline-start: 0.25rem;
+        }
+    }
+}
+
+.pagination__rows-per-page {
+    margin-block: 0.5rem;
+}
+
+.next-page__click-button .arrow.arrow-left,
+.previous-page__click-button .arrow.arrow-right {
+    padding: 0 !important;
+}
+
+.vue3-easy-data-table__main.border-cell .vue3-easy-data-table__body td {
+    border-right: inherit !important;
+    border-inline-end: var(--easy-table-row-border);
+}
+
+.vue3-easy-data-table__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vue3-easy-data-table__main::-webkit-scrollbar {
+    height: 4px !important;
+}
+
+[dir="rtl"] {
+    .arrow.arrow-left {
+        transform: rotate(315deg) !important;
+    }
+
+    .arrow.arrow-right {
+        transform: rotate(135deg) !important;
+    }
+}
+
+
+
+/* End:vue3-easy-data-table */

@@ -1,0 +1,44 @@
+/* Start:vue3-datepicker */
+.v3dp__popout {
+    background-color: $form-control-bg !important;
+    color: $default-text-color !important;
+    border: 0.1px solid $input-border !important;
+}
+
+.v3dp__divider {
+    border: 0.1px solid $input-border !important;
+}
+
+.v3dp__heading__button,
+.v3dp__heading__center {
+    background-color: $form-control-bg !important;
+    color: $default-text-color !important;
+}
+
+[dir="rtl"] {
+
+    .v3dp__heading__button__right,
+    .v3dp__heading__button__left {
+        transform: rotate(180deg);
+    }
+}
+
+.input-group .v3dp__datepicker .form-control {
+    border-start-start-radius: 0 !important;
+    border-end-start-radius: 0 !important;
+}
+
+.v3dp__elements button {
+    padding: 0.75em !important;
+}
+
+.dp__input_icons{
+    padding: initial !important;
+    margin-inline: 6px 12px;
+}
+@media (min-width : 992px) {
+    .v3dp__popout {
+        min-width: 50% !important;
+    }
+}
+/* End:vue3-datepicker */

@@ -1,0 +1,72 @@
+/* Start:vuepic_vue-datepicker*/
+.dp__theme_light,
+.dp__theme_dark {
+    --dp-background-color: #{$form-control-bg} !important;
+    --dp-text-color: #{$default-text-color} !important;
+    --dp-hover-color: #{$default-background} !important;
+    --dp-hover-text-color: #{$default-text-color} !important;
+    --dp-primary-color: #{$primary} !important;
+    --dp-primary-disabled-color: #{$primary-02} !important;
+    --dp-primary-text-color: #{$default-text-color} !important;
+    --dp-border-color: #{$input-border} !important;
+    --dp-menu-border-color: #{$input-border} !important;
+    --dp-border-color-hover: #{$input-border} !important;
+    --dp-scroll-bar-background: #{$form-control-bg} !important;
+    --dp-range-between-dates-text-color: var(--dp-hover-text-color, #{$default-text-color}) !important;
+    --dp-range-between-border-color: var(--dp-hover-color, #{$default-text-color}) !important;
+    --dp-time-inc-dec-button-size : 12px !important;
+    --dp-hover-color : transparent !important;
+}
+
+.dp__pointer.dp__input_readonly {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    width: 80% !important;
+    border: none !important;
+    padding-inline-start: 50px !important;
+}
+
+.dp__input_wrap {
+    border: 1px solid var(--default-border);
+    border-radius: $default-radius;
+}
+
+.dp__input_icon .input-group-text {
+    border-start-end-radius: 0 !important;
+    border-end-end-radius: 0 !important;
+}
+
+
+.dp__today,
+.dp__action_select {
+    color: #fff !important;
+}
+.dp--menu-wrapper {
+    z-index: 99 !important;
+}
+.dp__pointer.dp__input_readonly {
+    background-color: transparent;
+}
+
+.dp__today {
+    background-color: $primary;
+}
+
+.dp__overlay.dp--overlay-relative {
+    height: auto !important;
+    max-height: 70px;
+}
+.dp__inc_dec_button{
+    padding: 0 !important;
+}
+
+.dp--quarter-items .dp--qr-btn.dp--qr-btn-active {
+    color: #fff;
+  }
+  
+  .dp__overlay_col .dp__overlay_cell_active {
+    color: #fff;
+  }
+/* End:vuepic_vue-datepicker*/

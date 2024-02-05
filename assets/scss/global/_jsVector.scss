@@ -1,0 +1,9 @@
+[data-theme-mode="dark"] {
+    path.jvm-region.jvm-element {
+        fill: rgb(var(--light-rgb)) !important;
+    }
+
+    text.jvm-marker.jvm-element {
+        fill: var(--default-text-color);
+    }
+}

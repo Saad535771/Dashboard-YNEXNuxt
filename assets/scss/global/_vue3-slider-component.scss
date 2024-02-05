@@ -1,0 +1,51 @@
+/* Start:vue3-slider-component */
+
+.vue-slider-rail {
+  height: 5px !important;
+  background-color: $input-border !important;
+}
+
+#primary-colored-slider {
+  .vue-slider-process {
+    background-color: $primary !important;
+  }
+}
+
+#secondary-colored-slider {
+  .vue-slider-process {
+    background-color: $secondary !important;
+  }
+}
+
+#warning-colored-slider {
+  .vue-slider-process {
+    background-color: $warning !important;
+  }
+}
+
+#info-colored-slider {
+  .vue-slider-process {
+    background-color: $info !important;
+  }
+}
+
+#success-colored-slider {
+  .vue-slider-process {
+    background-color: $success !important;
+  }
+}
+
+#danger-colored-slider {
+  .vue-slider-process {
+    background-color: $danger !important;
+  }
+}
+
+.vue-slider-marks .vue-slider-mark:nth-child(2){
+  .vue-slider-mark-label {
+    -webkit-transform: translateX(-100%) !important;
+    transform: translateX(-100%) !important;
+  }
+}
+
+/* End:vue3-slider-component */

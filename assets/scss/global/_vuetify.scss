@@ -1,0 +1,121 @@
+/* Start:vuetify */
+.v-theme--light,
+.v-theme--dark,
+:root {
+    --v-theme-secondary: var(--secondary-rgb) !important;
+    --v-theme-primary: var(--primary-rgb) !important;
+    --v-theme-success: var(--success-rgb) !important;
+    --v-theme-surface: var(--body-bg-rgb) !important;
+    --v-theme-on-surface: var(--default-text-color) !important;
+    --v-theme-warning: var(--warning-rgb) !important;
+    --v-theme-info: var(--info-rgb) !important;
+    --v-theme-on-info: 255, 255, 255 !important;
+    --v-theme-error: var(--danger-rgb) !important;
+}
+
+.v-btn {
+    text-transform: inherit !important;
+}
+
+.v-field__field {
+    background-color: transparent !important;
+}
+
+.v-input--density-default .v-field--variant-solo,
+.v-input--density-default .v-field--variant-solo-inverted,
+.v-input--density-default .v-field--variant-solo-filled,
+.v-input--density-default .v-field--variant-filled {
+    --v-input-control-height: 56px !important;
+    --v-input-padding-top: 0px;
+}
+
+.v-field--variant-filled .v-field__overlay {
+    background-color: transparent !important;
+}
+
+.v-field--variant-filled .v-field__outline::before,
+.v-field--variant-underlined .v-field__outline::before {
+    border-color: var(--default-border) !important;
+    border-width: var(--bs-border-width) !important;
+    opacity: 1 !important;
+    border-radius: $default-radius;
+}
+
+.v-field--variant-filled .v-field__outline::after,
+.v-field--variant-underlined .v-field__outline::after {
+    border: none !important;
+}
+
+
+.v-table__wrapper td {
+    text-wrap: nowrap;
+}
+
+.v-menu>.v-overlay__content>.v-card,
+.v-menu>.v-overlay__content>.v-sheet,
+.v-menu>.v-overlay__content>.v-list {
+    background: var(--custom-white) !important;
+}
+
+.v-list-item--density-default:not(.v-list-item--nav).v-list-item--one-line {
+    padding: 0;
+    min-height: auto;
+}
+
+.main-header-container .main-header-dropdown .dropdown-item {
+    padding: .65rem;
+    border-block-end: 1px solid var(--default-border);
+}
+
+
+.previous-page__click-button .arrow,
+.next-page__click-button .arrow {
+    border-top: 2px solid $custom-black !important;
+    border-left: 2px solid $custom-black !important;
+}
+
+.v-table {
+    background: transparent !important;
+}
+
+.v-table>.v-table__wrapper>table {
+    border: 1px solid $default-border !important;
+}
+
+.v-table--fixed-header>.v-table__wrapper>table>thead {
+    top: -1px !important;
+}
+
+.v-table .v-table__wrapper>table>tbody>tr:not(:last-child)>td,
+.v-table .v-table__wrapper>table>tbody>tr:not(:last-child)>th,
+.v-table .v-table__wrapper>table>thead>tr>th {
+    border-bottom: 1px solid $default-border !important;
+}
+
+.v-theme--light.bg-light .v-btn__content {
+    color: $dark;
+}
+
+.v-theme--light.bg-dark .v-btn__content {
+    color: $custom-white;
+}
+
+.v-overlay__content {
+    max-width: 200px !important;
+}
+
+.v-list-item--density-default:not(.v-list-item--nav).v-list-item--one-line {
+    padding-inline: 0 !important;
+}
+
+[dir="rtl"] {
+    .v-locale--is-ltr {
+        direction: rtl;
+    }
+}
+.v-messages__message {
+    line-height: 1 !important; 
+}.v-input__details {
+    padding-block: 10px !important;
+}
+/* End:vuetify */

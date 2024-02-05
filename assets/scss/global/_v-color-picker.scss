@@ -1,0 +1,35 @@
+/* Start:v-color-picker*/
+.v-color-picker {
+    background-color: $form-control-bg !important;
+    color: $default-text-color !important;
+}
+
+.v-color-picker-edit__input input {
+    color: $default-text-color !important;
+}
+
+.current-color::after {
+    position: absolute;
+    content: "\efc5";
+    width: 100%;
+    height: 100%;
+    border-radius: 0.15em;
+    font-family: remixicon !important;
+    color: rgba(255, 255, 255, .7);
+    line-height: 1.5;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+.v-color-picker-preview .v-color-picker-preview__dot>div {
+  background-color: $text-muted !important;
+}
+
+
+@media (max-width: 425px) {
+    .v-color-picker {
+        width: 240px !important;
+    }
+}
+
+/* End:v-color-picker*/

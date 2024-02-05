@@ -1,0 +1,36 @@
+.ps__rail-y {
+    width: 6px !important;
+    right: 0 !important;
+}
+
+.ps__thumb-x {
+    background-color: $default-background !important;
+}
+
+.ps__thumb-y {
+    background-color: $default-border !important;
+    width: 6px !important;
+    right: 2px !important;
+}
+
+.ps__rail-x:hover>.ps__thumb-x,
+.ps__rail-x:focus>.ps__thumb-x,
+.ps__rail-x.ps--clicking .ps__thumb-x {
+    background-color: $default-background !important;
+}
+
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+    background-color: transparent !important;
+}
+
+.ps__rail-y:hover>.ps__thumb-y,
+.ps__rail-y:focus>.ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+    background-color: $default-background !important;
+    width: 3px !important;
+}

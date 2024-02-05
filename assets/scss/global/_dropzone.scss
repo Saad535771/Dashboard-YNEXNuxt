@@ -1,0 +1,29 @@
+/* Start: dropdown */
+.dropzone {
+    min-height: 76px;
+    padding: 0.5rem;
+    display: inline-flex;
+    width: 100%;
+}
+
+.dropzone__item-thumbnail img {
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+.dropzone__message {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.dropzone__item {
+    width: min-content;
+    margin: 0.5rem;
+}
+.dropzone__error-mark,
+.dropzone__success-mark {
+    z-index: 9 !important;
+}
+
+/* End: dropdown */

@@ -1,0 +1,102 @@
+.tooltip {
+  z-index: 105;
+
+  @mixin tooltip-color($color) {
+    .tooltip-inner {
+      background-color: $color;
+    }
+
+    &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+    &.bs-tooltip-top .tooltip-arrow::before {
+      border-top-color: $color;
+    }
+
+    &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+    &.bs-tooltip-end .tooltip-arrow::before {
+      border-right-color: $color;
+    }
+
+    &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+    &.bs-tooltip-start .tooltip-arrow::before {
+      border-left-color: $color;
+    }
+
+    &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+    &.bs-tooltip-end .tooltip-arrow::before {
+      border-bottom-color: $color;
+    }
+  }
+
+  &.tooltip-primary {
+    @include tooltip-color($primary);
+    background-color: $primary !important;
+  }
+
+  &.tooltip-secondary {
+    @include tooltip-color($secondary);
+    background-color: $secondary !important;
+  }
+
+  &.tooltip-warning {
+    @include tooltip-color($warning);
+    background-color: $warning !important;
+  }
+
+  &.tooltip-info {
+    @include tooltip-color($info);
+    background-color: $info !important;
+  }
+
+  &.tooltip-success {
+    @include tooltip-color($success);
+    background-color: $success !important;
+  }
+
+  &.tooltip-danger {
+    @include tooltip-color($danger);
+    background-color: $danger !important;
+  }
+
+  &.tooltip-dark {
+    @include tooltip-color($dark);
+    background-color: $dark !important;
+
+    .tooltip-inner {
+      color: $custom-white;
+    }
+  }
+
+  &.tooltip-light {
+    @include tooltip-color($light);
+
+    .tooltip-inner {
+      color: $default-text-color;
+    }
+  }
+}
+
+
+.tooltip-primary {
+  background-color: $primary !important;
+}
+.tooltip-secondary {
+  background-color: $secondary !important;
+}
+.tooltip-warning {
+  background-color: $warning !important;
+}
+.tooltip-info {
+  background-color: $info !important;
+}
+.tooltip-success {
+  background-color: $success !important;
+}
+.tooltip-danger {
+  background-color: $danger !important;
+}
+.tooltip-dark {
+  background-color: $dark !important;
+}
+.tooltip-light {
+  background-color: $light !important;
+}

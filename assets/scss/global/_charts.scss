@@ -1,0 +1,7 @@
+.apexcharts-tooltip.apexcharts-theme-light,
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title,
+.apexcharts-xaxistooltip, .apexcharts-yaxistooltip{
+    background-color: $form-control-bg !important;
+    color: $default-text-color !important;
+    border: 1px solid $input-border !important;
+}
